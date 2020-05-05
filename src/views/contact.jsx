@@ -13,7 +13,8 @@ export default class Home extends React.PureComponent {
       <div className="pt-content-card__contact-container flex flex-dc">
         <Nav icon="message" title={langContext.contact} />
         <ContactBody />
-      </div>
+        </div>
+
     );
   }
 }

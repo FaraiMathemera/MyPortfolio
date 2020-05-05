@@ -5,7 +5,11 @@
     "work": "My Work",
     "work_alt": "Work",
     "contact": "Contact me",
-    "contact_alt": "Contact"
+    "contact_alt": "Contact",
+    "blog": "My Blog",
+    "blog_alt": "Blog",
+    "services": "Services Offered",
+    "services_alt": "Services"
   },
   "about": {
     "find_me": "You'll find me on:"

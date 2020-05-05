@@ -3,6 +3,13 @@
     &__details {
         height: 100%;
         flex: 1;
+
+    }
+
+    &__blog{
+        height: 50%;
+        flex: 1;
+        background-color: coral;
     }
 
     &__presentation {
