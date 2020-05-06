@@ -23,7 +23,7 @@ export default class HomeBody extends React.PureComponent {
           <Link to='/work' title={langContext.work}><HomeButton iconTitle={langContext.work_alt} iconName='folder' /></Link>
           <Link to='/contact' title={langContext.contact}><HomeButton iconTitle={langContext.contact_alt} iconName='message' /></Link>
           <Link to='/blog' title={langContext.blog}><HomeButton iconTitle={langContext.blog_alt} iconName='blog' /></Link>
-          <Link to='/services' title={langContext.services}><HomeButton iconTitle={langContext.services_alt} iconName='services' /></Link>
+          
         </div>
         {
           this.props.profile.social.length > 0 &&

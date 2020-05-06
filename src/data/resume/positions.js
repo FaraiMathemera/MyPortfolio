@@ -9,7 +9,7 @@ const positions = [
       'Back End Developer working on (Most Viable Products) MVPs for startups.',
     ],
   }, {
-    company: 'Independant Contractor',
+    company: 'Independent Contractor',
     position: 'Software Engineer',
     link: 'http://www.faraimathemera.co.za/',
     daterange: 'January 2018 – Present',

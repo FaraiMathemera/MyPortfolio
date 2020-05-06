@@ -29,7 +29,7 @@ export default class ContactBody extends React.PureComponent {
       },
       ReCAPTCHA: null
     };
-    
+
     this.captcha = null;
 
     (async function(){
@@ -52,29 +52,29 @@ export default class ContactBody extends React.PureComponent {
       case "Success":
         this.state.toastify.toast.success(text, {
           closeButton: <CloseButton />,
-          closeOnClick: false 
+          closeOnClick: false
         })
         break;
       case "Error":
         this.state.toastify.toast.error(text, {
           closeButton: <CloseButton />,
-          closeOnClick: false 
+          closeOnClick: false
         })
         break;
       default:
         this.state.toastify.toast(text, {
           closeButton: <CloseButton />,
-          closeOnClick: false 
+          closeOnClick: false
         })
         break;
     }
   }
-  
+
   onFormSubmit(e) {
     e.preventDefault();
     this.captcha.execute();
   }
-  
+
   onCaptchaChange(value) {
     if(value === null) {
       return;
@@ -102,10 +102,10 @@ export default class ContactBody extends React.PureComponent {
     this.setState({
       [e.target.id]: e.target.value
     });
-    
+
     if(e.target.value) {
       e.target.nextElementSibling.classList.add('has-content');
-    } 
+    }
     else {
       e.target.nextElementSibling.classList.remove('has-content');
     }
@@ -155,7 +155,7 @@ export default class ContactBody extends React.PureComponent {
     return (
       <div className="pt-content-card__body pt-content-card__body__contact flex">
       {
-        this.state.ReCAPTCHA ? 
+        this.state.ReCAPTCHA ?
           <this.state.ReCAPTCHA
             ref={(el) => {this.captcha = el}}
             className="recaptcha"
@@ -167,13 +167,13 @@ export default class ContactBody extends React.PureComponent {
 
       {
         this.state.toastify.ToastContainer ?
-          <this.state.toastify.ToastContainer 
+          <this.state.toastify.ToastContainer
             position="bottom-left"
             autoClose={5000}
             type="default"
           /> : null
       }
-      
+
       {
         profile.social.length > 0 &&
         <div className="pt-content-card__body__contact__social flex flex-dc flex-full-center">
