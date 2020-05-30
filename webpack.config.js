@@ -41,7 +41,12 @@ module.exports = env => {
       contentBase: './src',
       stats: 'minimal',
       hot: true,
-      inline: true
+      inline: true.
+      disableHostCheck: true,
+      compress: true,
+      allowedHosts: [
+      '.amazonaws.com'
+      ]
     },
     module: {
       rules: [
