@@ -21,6 +21,9 @@ export default class ContactBody extends React.PureComponent {
     this.state = {
       name: "",
       email: "",
+      phone: "",
+      budget: "",
+      functionality: "",
       message: "",
       isFormLoading: false,
       toastify: {
@@ -84,6 +87,9 @@ export default class ContactBody extends React.PureComponent {
     sendToForm(
       this.state.name,
       this.state.email,
+      this.state.phone,
+      this.state.budget,
+      this.state.functionality,
       this.state.message,
       value)
       .then(message => {
@@ -130,6 +136,9 @@ export default class ContactBody extends React.PureComponent {
                 <span></span>
                 <span></span>
                 <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
       )
@@ -138,6 +147,9 @@ export default class ContactBody extends React.PureComponent {
         <div className={`loader-container flex flex-main-center`}>
             {langContext.sending}
             <div className="loader">
+                <span></span>
+                <span></span>
+                <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
@@ -192,6 +204,7 @@ export default class ContactBody extends React.PureComponent {
                 <path d="M0 1 L40 1" className="valid" />
               </svg>
             </div>
+
             <div className="pt-content-card__body__contact__form__row flex flex-dc flex-main-center">
               <input id="email" className="pt-content-card__body__contact__form__input" type="email" onChange={this.onInputValueChange}/>
               <label htmlFor="email" className="pt-content-card__body__contact__form__label">{langContext.form.email}</label>
@@ -202,6 +215,40 @@ export default class ContactBody extends React.PureComponent {
                 <path d="M0 1 L40 1" className="valid" />
               </svg>
             </div>
+
+            <div className="pt-content-card__body__contact__form__row flex flex-dc flex-main-center">
+              <input id="phone" className="pt-content-card__body__contact__form__textarea"  onChange={this.onInputValueChange}/>
+              <label htmlFor="phone" className="pt-content-card__body__contact__form__label">{langContext.form.phone}</label>
+              <svg className="line" viewBox="0 0 40 2" preserveAspectRatio="none">
+                <path d="M0 1 L40 1" />
+                <path d="M0 1 L40 1" className="focus" />
+                <path d="M0 1 L40 1" className="error" />
+                <path d="M0 1 L40 1" className="valid" />
+              </svg>
+            </div>
+
+            <div className="pt-content-card__body__contact__form__row flex flex-dc flex-main-center">
+              <input id="budget" className="pt-content-card__body__contact__form__input" type="text" onChange={this.onInputValueChange}/>
+              <label htmlFor="budget" className="pt-content-card__body__contact__form__label">{langContext.form.budget}</label>
+              <svg className="line" viewBox="0 0 40 2" preserveAspectRatio="none">
+                <path d="M0 1 L40 1" />
+                <path d="M0 1 L40 1" className="focus" />
+                <path d="M0 1 L40 1" className="error" />
+                <path d="M0 1 L40 1" className="valid" />
+              </svg>
+            </div>
+
+            <div className="pt-content-card__body__contact__form__row flex flex-dc flex-main-center">
+              <input id="functionality" className="pt-content-card__body__contact__form__input" type="text" onChange={this.onInputValueChange}/>
+              <label htmlFor="functionality" className="pt-content-card__body__contact__form__label">{langContext.form.functionality}</label>
+              <svg className="line" viewBox="0 0 40 2" preserveAspectRatio="none">
+                <path d="M0 1 L40 1" />
+                <path d="M0 1 L40 1" className="focus" />
+                <path d="M0 1 L40 1" className="error" />
+                <path d="M0 1 L40 1" className="valid" />
+              </svg>
+            </div>
+
             <div className="pt-content-card__body__contact__form__row flex flex-dc flex-main-center">
               <textarea id="message" className="pt-content-card__body__contact__form__textarea" rows="6" onChange={this.onInputValueChange}/>
               <label htmlFor="message" className="pt-content-card__body__contact__form__label">{langContext.form.message}</label>
