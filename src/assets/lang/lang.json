@@ -26,12 +26,19 @@
       "close": "Close"
     },
     "form": {
-      "name": "What's your name?",
-      "email": "What's your email?",
-      "message": "Please, explain yourself:",
+      "name": "Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "budget": "What is your budget?",
+      "message": "Notes",
+      "features": "Features",
+      "functionality": "What functionality do you need?",
       "validation": {
         "invalid_name": "Invalid name",
         "invalid_email": "Invalid email",
+        "invalid_phone": "Invalid phone number",
+        "invalid_budget": "Invalid budget",
+        "invalid_functionality": "Invalid functionality",
         "invalid_message": "Invalid message",
         "invalid_grecaptcha": "Invalid gRecaptchaResponse",
         "server_error": "Server returned an invalid response",
