@@ -38,6 +38,14 @@ function mediumWidget(){
   MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@mathemerafarai","postsPerLine":2,"limit":8,"picture":"big","fields":["description","author","claps","publishAt"],"ratio":"landscape"}});
 }
 </script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_2VaYNVYrBvaq3xQ9lukBN");
+   })();
+</script>
+
+
 <body>
     <div id="pt-app" class="flex flex-full-center">
         <div class="view-loading">

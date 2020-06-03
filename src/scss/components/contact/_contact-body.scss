@@ -80,7 +80,7 @@
 
             input, textarea {
                 flex-grow: 1;
-                display: block;
+                display: inline;
                 margin: 0;
                 border: none;
                 padding: .5em 0;
@@ -125,6 +125,98 @@
                 stroke: $input-color-error;
                 color: $input-color-error;
             }
+            .table {
+                  display: grid;
+                  grid-template-columns: [col-start] auto [col-end];
+                  grid-template-rows: [header-start] 50px [header-end row-start] auto [row-end];
+                  grid-auto-rows: auto;
+                  grid-auto-columns: auto;
+                  grid-gap: 1px;
+                  overflow: hidden;
+                  background: gray;
+                }
+
+                .table>* {
+                  padding: 10px;
+                  position: relative;
+                }
+
+                .heading {
+                  background: navy;
+                  color: #fff;
+                  grid-row: header;
+                }
+
+                .row span {
+                  position: relative;
+                  z-index: 2;
+                }
+
+                .row:before {
+                  content: "";
+                  position: absolute;
+                  top: 0;
+                  bottom: 0;
+                  right: -1000%;
+                  left: -1000%;
+                  z-index: 1;
+                }
+
+                .row:after {
+                  content: "";
+                  position: absolute;
+                  top: 0;
+                  bottom: 0;
+                  right: -1px;
+                  width: 1px;
+                  z-index: 2;
+                  background-color: #fff;
+                }
+
+                .row:nth-child(5n+5)::after {
+                  bottom: -1px;
+                  right: 0;
+                  left: -1000%;
+                  height: 1px;
+                  z-index: 3;
+                  width: auto;
+                  top: auto;
+                  background-color: #fff;
+                }
+
+                .row:hover::before {
+                  background-color: red;
+                }
+            .wrapper {
+                  display: grid;
+                  grid-template-columns: repeat(2, 1fr);
+                  grid-gap: 2%;
+                  grid-auto-rows: minmax(100px, auto);
+                }
+                .one {
+                  grid-column: 1 ;
+                  grid-row: 1;
+                }
+                .two {
+                  grid-column: 2;
+                  grid-row: 1;
+                }
+                .three {
+                  grid-column: 2;
+                  grid-row: 2;
+                }
+                .four {
+                  grid-column: 3;
+                  grid-row: 3;
+                }
+                .five {
+                  grid-column: 1;
+                  grid-row: 3;
+                }
+                .six {
+                  grid-column: 2;
+                  grid-row: 3;
+                }
 
             input:focus ~ .line .focus,
             input.valid ~ .line .valid,

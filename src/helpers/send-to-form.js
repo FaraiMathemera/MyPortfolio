@@ -1,8 +1,11 @@
 import { formUrl } from '../config'
 import lang from 'lang'
-import postmark from'postmark'
+//import sendMail from 'nodemailer'
+//import smtpTransport from 'nodemailer-smtp-transport'
 
 const langContext = lang.contact.form.validation
+
+
 
 function validateName (name) {
   return !!name
@@ -36,6 +39,10 @@ function validateGRecaptchaResponse (gRecaptchaResponse) {
   return !!gRecaptchaResponse
 }
 
+
+var service_id = "default_service"
+var template_id = "template_mjzS3cY6"
+
 async function sendData (name, email,phone, budget, functionality, message, gRecaptchaResponse) {
   let postData = JSON.stringify({
     name,
@@ -45,14 +52,6 @@ async function sendData (name, email,phone, budget, functionality, message, gRec
     functionality,
     message,
     'g-recaptcha-response': gRecaptchaResponse
-  })
-
-  return fetch(formUrl, {
-    method: 'post',
-    headers: {
-      'Content-type': 'application/json; charset=UTF-8'
-    },
-    body: postData
   })
 
   }
@@ -86,21 +85,22 @@ function sendToForm (name, email,phone, budget, functionality, message, gRecaptc
     if (!validateGRecaptchaResponse(gRecaptchaResponse)) {
       return reject(String(langContext.invalid_grecaptcha))
     }
-
+    var template_params = {
+       "reply_to": email,
+       "from_name": name,
+       "to_name": "Farai",
+       "message_html": phone+" "+budget+" "+functionality+" "+message
+    }
     sendData(name, email,phone, budget, functionality, message, gRecaptchaResponse)
-      .then(response => {
-
-        if (response.status >= 200 && response.status < 300) {
-          resolve(String(langContext.success))
-        } else {
-          reject(String(langContext.server_error))
-        }
-      })
-      .catch(err => {
-        reject(String(langContext.conection_error))
-
-
-      })
+    {
+      emailjs.send(service_id, template_id, template_params).then((response) => {
+       console.log('SUCCESS!', response.status, response.text);
+       resolve(String(langContext.success));
+    }, (err) => {
+       console.log('FAILED...', err);
+       reject(String(langContext.server_error));
+    });
+    }
 
   })
 }

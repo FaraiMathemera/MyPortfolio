@@ -8,6 +8,8 @@ import { profile, ReCAPTCHAKey } from '../../config.js';
 
 import lang from 'lang';
 
+//import sendMail from 'nodemailer';
+
 const langContext = lang.contact;
 
 const CloseButton = ({ closeToast }) => (
