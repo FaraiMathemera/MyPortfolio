@@ -111,7 +111,7 @@ export default class ContactBody extends React.PureComponent {
       [e.target.id]: e.target.value
     });
 
-    if(e.target.value) {
+    if(e.currentTarget.value) {
       e.target.nextElementSibling.classList.add('has-content');
     }
     else {
@@ -230,25 +230,27 @@ export default class ContactBody extends React.PureComponent {
             </div>
 
             <div className="pt-content-card__body__contact__form__row flex flex-dc flex-main-center">
-              <input id="budget" className="pt-content-card__body__contact__form__input" type="text" onChange={this.onInputValueChange}/>
-              <label htmlFor="budget" className="pt-content-card__body__contact__form__label">{langContext.form.budget}</label>
-              <svg className="line" viewBox="0 0 40 2" preserveAspectRatio="none">
-                <path d="M0 1 L40 1" />
-                <path d="M0 1 L40 1" className="focus" />
-                <path d="M0 1 L40 1" className="error" />
-                <path d="M0 1 L40 1" className="valid" />
-              </svg>
+              <select id="budget" form="flex flex-dc flex-full-center" className="pt-content-card__body__contact__form__textarea" onChange={this.onInputValueChange} style="border-radius:2%;">
+              <option value="labelbudget" selected="selected" disabled>{langContext.form.budget}</option>
+              <option value="R7 500 - R15 000">R7 500 - R15 000</option>
+              <option value="R15 000 - R20 000">R15 000 - R20 000</option>
+              <option value="R20 000 - R25 000">R20 000 - R25 000</option>
+              <option value="R25 000 - R30 000">R25 000 - R30 000</option>
+              <option value="R30 000+">R30 000+</option>
+            </select>
             </div>
 
+
+
             <div className="pt-content-card__body__contact__form__row flex flex-dc flex-main-center">
-              <input id="functionality" className="pt-content-card__body__contact__form__input" type="text" onChange={this.onInputValueChange}/>
-              <label htmlFor="functionality" className="pt-content-card__body__contact__form__label">{langContext.form.functionality}</label>
-              <svg className="line" viewBox="0 0 40 2" preserveAspectRatio="none">
-                <path d="M0 1 L40 1" />
-                <path d="M0 1 L40 1" className="focus" />
-                <path d="M0 1 L40 1" className="error" />
-                <path d="M0 1 L40 1" className="valid" />
-              </svg>
+              <select id="functionality" form="flex flex-dc flex-full-center" className="pt-content-card__body__contact__form__textarea" onChange={this.onInputValueChange} style="border-radius:2%;">
+              <option value="label" selected="selected" disabled>{langContext.form.functionality}</option>
+              <option value="E-commerce">E-Commerce</option>
+              <option value="Property-Listing">Property Listing</option>
+              <option value="Gallery">Gallery</option>
+              <option value="Jobs Portal">Jobs Portal</option>
+              <option value="Other">Other</option>
+            </select>
             </div>
 
             <div className="pt-content-card__body__contact__form__row flex flex-dc flex-main-center">
