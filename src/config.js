@@ -39,7 +39,7 @@ const profile = {
 const projects = [
   {
     title: 'Personal Website (fadzaikadzinga.co.za)',
-    img: '../assets/FadzaiK.png',
+    img: '../assets/fadzai.png',
     description: 'Personal website of PhD candidate looking to put herself out there and showcase herself.',
     categories: ['Website', 'NodeJS', 'React'],
     siteUrl: 'https://fadzaikadzinga.co.za'
