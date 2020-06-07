@@ -53,7 +53,7 @@ const projects = [
   },
   {
     title: 'I Do Foundation (NGO)',
-    img: '',
+    img: '../assets/ido.jpg',
     description: 'NGO providing the community with education and support services.',
     categories: ['JS', 'Website', 'PHP'],
     siteUrl: 'http://idofoundation.co.za',
@@ -61,7 +61,7 @@ const projects = [
   },
   {
     title: 'Simple Sentiment Analysis on Twitter',
-    img: '',
+    img: '../assets/tweepy.jpg',
     description: 'Simple Sentiment Analysis on Twitter.',
     categories: ['Tweepy', 'Python'],
     sourceCodeUrl: 'https://github.com/FaraiMathemera/Very-Simple-Sentiment-Analysis'
@@ -75,10 +75,17 @@ const projects = [
   },
   {
     title: 'S3 Pipeline',
-    img: '',
+    img: '../assets/s3.jpg',
     description: 'Get TwitterApi data save it to a JSON file, which is then stored in AWS S3.',
     categories: ['AWS', 'Python', 'S3'],
     sourceCodeUrl: 'https://github.com/FaraiMathemera/step_by_step_pipeline'
+  },
+  {
+    title: 'Instant Express Transfers',
+    img: '../assets/iet.jpg',
+    description: 'Website for financial services company providing niche products directed at diasporians',
+    categories: ['PHP', 'JS', 'HTML'],
+    sourceCodeUrl: 'https://github.com/FaraiMathemera/INSTANT-EXPRESS-MONEY-TRANSFERES'
   }
 ]
 
