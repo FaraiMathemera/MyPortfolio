@@ -89,7 +89,7 @@ const projects = [
   },
   {
     title: 'Kaggle Projectss',
-    img: '../assets/Kaggle.jpeg',
+    img: '../assets/kaggle.jpeg',
     description: 'Collection of Kaggle projects I did to grasp core concepts of data science and data analysis, while exploring concepts I find interesting',
     categories: ['Juypter Notebooks', 'Python'],
     sourceCodeUrl: 'https://github.com/FaraiMathemera/Data-Analysis-Projects'
