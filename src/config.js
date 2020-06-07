@@ -2,7 +2,7 @@ const profile = {
   fullName: 'Farai Mathemera',
   description: 'BACK-END DEVELOPER | CLOUD ENGINEER',
 
-  avatarPath: 'avatar.svg',
+  avatarPath: 'avatar.jpg',
   about: {
     title: `FARAI MATHEMERA`,
     description: ``,
