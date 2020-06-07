@@ -11,7 +11,7 @@ const profile = {
   social: [
     {
       iconName: 'linkedin',
-      url: 'www.linkedin.com/in/farai-mathemera',
+      url: 'https://linkedin.com/in/farai-mathemera',
       text: "I'm on linkedIn",
       hoverColor: '#0e76a8'
     },
@@ -42,24 +42,24 @@ const projects = [
     img: '../assets/FadzaiK.png',
     description: 'Personal website of PhD candidate looking to put herself out there and showcase herself.',
     categories: ['Website', 'NodeJS', 'React'],
-    siteUrl: 'fadzaikadzinga.co.za',
-    sourceCodeUrl: 'github.com/FaraiMathemera/project'
+    siteUrl: 'https://fadzaikadzinga.co.za',
+    sourceCodeUrl: 'https://github.com/FaraiMathemera/project'
   },
   {
     title: 'faraimathemera.co.za',
     img: '../assets/icons/favicon.ico',
     description: 'My personal website with projects I have done.',
     categories: ['Website', 'NodeJS', 'React'],
-    siteUrl: 'faraimathemera.co.za',
-    sourceCodeUrl: 'github.com/FaraiMathemera/project'
+    siteUrl: 'https://faraimathemera.co.za',
+    sourceCodeUrl: 'https://github.com/FaraiMathemera/project'
   },
   {
     title: 'I Do Foundation (NGO)',
     img: '',
     description: 'NGO providing the community with education and support services.',
     categories: ['JS', 'Website'],
-    siteUrl: 'idofoundation.co.za',
-    sourceCodeUrl: 'github.com/FaraiMathemera/:O'
+    siteUrl: 'http://idofoundation.co.za',
+    sourceCodeUrl: 'https://github.com/FaraiMathemera/:O'
   }
 ]
 
