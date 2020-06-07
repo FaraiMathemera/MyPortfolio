@@ -86,7 +86,7 @@ const projects = [
     description: 'Website for financial services company providing niche products directed at diasporians',
     categories: ['PHP', 'JS', 'HTML'],
     sourceCodeUrl: 'https://github.com/FaraiMathemera/INSTANT-EXPRESS-MONEY-TRANSFERES'
-  },,
+  },
   {
     title: 'Kaggle Projectss',
     img: '../assets/Kaggle.jpeg',
