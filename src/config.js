@@ -86,6 +86,13 @@ const projects = [
     description: 'Website for financial services company providing niche products directed at diasporians',
     categories: ['PHP', 'JS', 'HTML'],
     sourceCodeUrl: 'https://github.com/FaraiMathemera/INSTANT-EXPRESS-MONEY-TRANSFERES'
+  },,
+  {
+    title: 'Kaggle Projectss',
+    img: '../assets/Kaggle.jpeg',
+    description: 'Collection of Kaggle projects I did to grasp core concepts of data science and data analysis, while exploring concepts I find interesting',
+    categories: ['Juypter Notebooks', 'Python'],
+    sourceCodeUrl: 'https://github.com/FaraiMathemera/Data-Analysis-Projects'
   }
 ]
 
