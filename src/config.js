@@ -42,24 +42,43 @@ const projects = [
     img: '../assets/FadzaiK.png',
     description: 'Personal website of PhD candidate looking to put herself out there and showcase herself.',
     categories: ['Website', 'NodeJS', 'React'],
-    siteUrl: 'https://fadzaikadzinga.co.za',
-    sourceCodeUrl: 'https://github.com/FaraiMathemera/project'
+    siteUrl: 'https://fadzaikadzinga.co.za'
   },
   {
     title: 'faraimathemera.co.za',
     img: '../assets/icons/favicon.ico',
     description: 'My personal website with projects I have done.',
     categories: ['Website', 'NodeJS', 'React'],
-    siteUrl: 'https://faraimathemera.co.za',
-    sourceCodeUrl: 'https://github.com/FaraiMathemera/project'
+    siteUrl: 'https://faraimathemera.co.za'
   },
   {
     title: 'I Do Foundation (NGO)',
     img: '',
     description: 'NGO providing the community with education and support services.',
-    categories: ['JS', 'Website'],
+    categories: ['JS', 'Website', 'PHP'],
     siteUrl: 'http://idofoundation.co.za',
-    sourceCodeUrl: 'https://github.com/FaraiMathemera/:O'
+    sourceCodeUrl: 'https://github.com/FaraiMathemera/I-DO-FOUNDATION'
+  },
+  {
+    title: 'Simple Sentiment Analysis on Twitter',
+    img: '',
+    description: 'Simple Sentiment Analysis on Twitter.',
+    categories: ['Tweepy', 'Python'],
+    sourceCodeUrl: 'https://github.com/FaraiMathemera/Very-Simple-Sentiment-Analysis'
+  },
+  {
+    title: 'LingoLearn',
+    img: '',
+    description: '3rd Year Capstone Group Project. Application geared at helping users learn a second language. The software is aimed at school children, who need to grasp another language and the interface reflects this by the use of bright colours and images.',
+    categories: ['Django', 'Python'],
+    sourceCodeUrl: 'https://github.com/FaraiMathemera/Very-Simple-Sentiment-Analysis'
+  },
+  {
+    title: 'S3 Pipeline',
+    img: '',
+    description: 'Get TwitterApi data save it to a JSON file, which is then stored in AWS S3.',
+    categories: ['AWS', 'Python', 'S3'],
+    sourceCodeUrl: 'https://github.com/FaraiMathemera/step_by_step_pipeline'
   }
 ]
 
